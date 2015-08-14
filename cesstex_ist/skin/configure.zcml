@@ -1,0 +1,33 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:cmf="http://namespaces.zope.org/cmf"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    i18n_domain="cesstex_ist.skin">
+
+    <five:registerPackage package="." initialize=".initialize" />
+
+    <include package="archetypes.schemaextender" />
+    <include package="z3c.jbot" file="meta.zcml" />
+    <include package="collective.autopermission" />
+
+    <permission id="cesstex.ProfISM"
+                title="cesstex: ProfISM" />
+
+    <include package=".portlets" />
+    <include package=".browser" />
+
+    <include file="skins.zcml" />
+    <include file="profiles.zcml" />
+
+    <adapter factory=".extendedFields.ContentExtender" />
+    <adapter factory="cesstex_ist.skin.extendedNews.NewsExtender" />
+
+    <browser:templateOverrides directory="skins/cesstex_templates" />
+
+    <plone:static type="theme"
+                  directory="static"
+                  name="cesstex_ist.skin" />
+
+</configure>

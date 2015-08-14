@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<import-steps>
+  <import-step id="cesstex_ist.skin.various"
+               version="20090129-01"
+               handler="cesstex_ist.skin.setuphandlers.setupcesstex"
+               title="cesstex skin: miscellaneous import steps">
+    <dependency step="skins" />
+    Setup portal for CesStEx skin.
+  </import-step>
+</import-steps>

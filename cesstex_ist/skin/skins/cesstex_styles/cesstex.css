@@ -1,0 +1,545 @@
+
+/*
+Centre scolaire Saint-Exupéry
+Made by Affinitic.be
+
+CSS Générale
+
+*/
+
+a {
+background-color:transparent;
+color:#436976;
+text-decoration:none;
+}
+
+a:hover{
+text-decoration:underline;
+color:#0085cd;
+}
+
+.grasrouge{
+color:#a31b1b;
+font-weight:bold;
+}
+
+.smallcaps{
+font-variant:small-caps;
+}
+
+
+.vert-actif{
+color:#00ff00;
+text-shadow:1px 1px 1px rgba(0,50,0,0.5);
+}
+
+.rouge-non-actif{
+color:#ff0000;
+text-shadow:1px 1px 1px rgba(100,0,0,0.5);
+}
+
+.aligner-gauche{
+text-align:left;
+}
+
+.aligner-droite{
+text-align:right;
+}
+
+.discreet{
+background-color:transparent !important;
+}
+
+/*** VISUAL PORTER ***/
+#visual-portal-wrapper{
+background-color:#fff;
+border:2px solid #ccc;
+border-radius:12px;
+box-shadow:8px 8px 8px rgba(0,0,0,0.5);
+margin: 15px auto;
+padding: 0;
+width: 1000px;
+}
+
+/*** PORTAL HEADER ***/
+#portal-header{
+border-radius:10px 10px 0px 0px;
+padding-top:10px;
+background-color:#fff;
+}
+
+
+/*** COLONNE ***/
+#portal-columns{
+margin-bottom:10px;
+}
+
+#portal-column-one {
+background-image:url(background.png);
+border-collapse:collapse;
+padding:0;
+vertical-align:top;
+width:200px;
+}
+
+#portal-column-one .visualPadding {
+padding:2em 0 1em 5px;
+}
+
+#portal-column-two {
+background-image:url(background.png);
+border-collapse:collapse;
+padding:0px 0px 0px 4px;
+vertical-align:top;
+width:150px;
+}
+
+#portal-column-two .visualPadding {
+padding:2em 5px 1em 0;
+}
+
+#portal-column-content{
+background-color:#fff;
+}
+
+/*** PORTLET ***/
+.portlet {
+width:95%;
+margin:auto;
+background-color:transparent;
+border-bottom:none;
+margin-bottom:1em;
+}
+
+.portletHeader {
+border-top:1px solid #5fd2c7 !important;
+border-left:1px solid #5fd2c7 !important;
+border-right:1px solid #5fd2c7 !important;
+border-bottom:1px solid #fff !important;
+border-radius:8px 8px 0px 0px;
+height:20px;
+background:#eaf8fc;
+}
+
+.portletHeader, .managedPortlet .portletHeader {
+}
+
+.portletHeader a {
+color:#333;
+font-weight:bold;
+font-variant:small-caps;
+}
+
+.portletHeader a:hover {
+color:#000;
+}
+
+.portletItem {
+background-color:#f9fbff;
+border-left:1px solid #5fd2c7;
+border-right:1px solid #5fd2c7;
+margin:0;
+padding:5px 5px;
+}
+
+.portletFooter {
+border-top:1px solid rgba(200,200,200,0.1) !important;
+border-left:1px solid #5fd2c7 !important;
+border-right:1px solid #5fd2c7 !important;
+border-bottom:1px solid #5fd2c7 !important;
+border-radius:0px 0px 8px 8px;
+height:17px;
+background-color:#f9fbff;
+margin-top:-4px;
+}
+
+.portletFooterEvents {
+background-color:none;
+background-image:url(bg_footer_portlet.png);
+background-repeat:no-repeat;
+background-position: 0px -45px;
+border-left:none;
+border-right:none;
+border-bottom:none;
+margin:0;
+padding:0.25em 1em;
+text-align:right;
+border-left:none;
+border-right:none;
+border-top:1px dotted #8CACBB;
+}
+
+.navTreeItem a, dd.portletItem .navTreeItem a {
+border-width:1px 1px 1px 1px;
+border-style:solid solid dotted solid;
+border-color:#fff #fff #ccc #fff;
+display:block;
+padding-bottom:0.3em;
+padding-top:0.3em;
+padding-left:3px;
+text-decoration:none;
+}
+
+.navTreeItem a:hover,
+dd.portletItem .navTreeItem a:hover,
+.navTreeCurrentItem {
+background-color:#DEE7EC;
+color:#436976;
+}
+
+/***PORLET COLLECTION AGENDA***/
+#agenda-footer{
+width:187px;
+margin-top:-6px;
+margin-left:-8px;
+}
+.calendrier-footer{
+text-align:left;
+}
+
+/*** CALENDAR ***/
+.ploneCalendar {
+border-bottom:1px solid #0075d2;
+border-collapse:collapse;
+border-spacing:0;
+width:100%;
+}
+
+
+
+/*** SEARCH-BOX et PERSONAL-TOOLS ***/
+/*** masquer le searchbox pour toutes les implatations non ISM ***/
+div#portal-top div#portal-header div#portal-searchbox{
+display:none;
+}
+
+
+/*** positionner correctement le personal-tools pour toutes les implantations non ISM ***/
+div#portal-personaltools-wrapper dl#portal-personaltools.actionMenu.activated dd.actionMenuContent{
+display:none;
+position:absolute;
+right:14px;
+top:1.6em;
+z-index:5;
+height:auto;
+width:140px;
+margin:0;
+text-align:center;
+}
+
+div#portal-personaltools-wrapper dl#portal-personaltools.actionMenu.activated dd.actionMenuContent ul{
+background-color:rgba(222,231,236, 0.9) !important;
+border-color:#8CACBB;
+border-radius:0px 0px 8px 8px;
+margin:0px;
+}
+
+div#portal-personaltools-wrapper dl#portal-personaltools.actionMenu.activated dd.actionMenuContent ul li a:hover{
+background-color:rgba(4,135,189,0.6) !important;
+}
+
+
+
+/***HEADER BARRE NAVIGATION PLONE***/
+#header-cesstex{
+background-color:#a5d3ed;
+}
+
+
+#header-cesstex table{
+width:100%;
+background-color:#fff;
+margin-left:auto;
+margin-right:auto;
+border-collapse:collapse;
+border-spacing:0px;
+padding:0px;
+text-align:center;
+}
+#header-cesstex a{
+text-decoration:none;
+}
+
+#small-logo{
+width:209px;
+border-right:4px solid #a6d2ed;
+background-color:#fff;
+text-align:center;
+}
+
+
+/*la louviere-manage*/
+#site-ces{
+}
+#site a{
+color:#2a84a6;
+font-size:1.1em;
+font-weight:bold;
+text-transform:uppercase;
+}
+#site a:hover {
+color:#14044e;
+}
+.puce-bleue{
+margin-left:1.1em;
+margin-right:1.1em;
+margin-bottom:0.7;
+}
+
+/*centre scolaire*/
+#ces{
+text-align:right;
+padding-right:1em;
+display:block;
+}
+.centre{
+color:#2b84a6;
+}
+.stex{
+color:#0caeef;
+}
+#ces a{
+font-size:2.3em;
+text-decoration:none;
+letter-spacing:0.3em;
+}
+#ces a:hover {
+background-color:#efefff;
+}
+
+
+/*nom des ecoles*/
+#implentation{
+background-color:#fff;      /*#075a7c;*/
+height:53px;
+}
+#implentation td{
+background-image:url(menu_off.gif);
+background-repeat:no-repeat;
+background-position:center -7px;
+}
+#implentation td:hover {
+background-image:url(menu_on.gif);
+background-repeat:no-repeat;
+background-position:center -7px;
+}
+
+.ecole{
+padding:5px;
+background-color:#075a7c;
+font-weight:bold;
+font-size:1.3em;
+}
+#implentation a{
+color:#add2e1;
+text-decoration:none;
+}
+#implentation a:hover {
+color:#fff;
+}
+
+#enseignement{
+font-weight:bold;
+font-variant:small-caps;
+font-size:1.2em;
+}
+
+#enseignement a{
+color:#ddd;
+}
+
+#enseignement a:hover{
+color:#fff;
+text-decoration:underline;
+}
+
+#type-maternelle{
+background-color:#0487bd;
+}
+
+#type-primaire{
+background-color:#2d83a6;
+}
+
+#type-secondaire{
+background-color:#0daff0;
+}
+
+
+
+/*** GALERIE ***/
+div#plone-true-gallery {
+background-color:transparent;
+}
+
+.jcarousel-skin-truegallery .jcarousel-container {
+background:transparent;
+border:1px solid #436976;
+margin:auto;
+}
+
+div#plone-true-gallery div.info {
+background-color:#DEE7EC;
+border:1px dashed #436976;
+margin:5px auto;ƒ
+padding-bottom:5px;
+text-align:center;
+width:400px;
+}
+
+
+#content a[href^="http:"],
+#content a.link-external {
+-moz-background-clip:border;
+-moz-background-inline-policy:continuous;
+-moz-background-origin:padding;
+padding:1px 0 1px 0px;
+background-image:none;
+}
+
+
+
+
+
+/*** CALENDARX ***/
+.calendarX-tabs{
+font-family:"Lucida Grande",Verdana,Lucida,Helvetica,Arial,sans-serif;
+font-size:97%;
+width:100%;
+}
+
+table.calheader {
+background-color:#cde8fd;   /*#d4ffff;*/
+border:1px solid #0487bd;
+font-family:Verdana,Helvetica,Arial,sans-serif;
+font-size:93%;
+margin-bottom:0;
+margin-top:0;
+width:100%;
+}
+
+#calbody{
+border:1px solid #0487bd;
+}
+
+#calenderX-left-column{
+width:165px;
+vertical-align:top;
+text-align:left;
+}
+
+#calendarX-main-column{
+vertical-align:top;
+text-align:left;
+width:83%;
+}
+
+#calendarX-titre-categorie{
+background-color:#839db0;
+text-align:center;
+font-variant:small-caps;
+font-weight:bold;
+font-size:1.3em;
+color:#fff;
+border-bottom:1px solid #000;
+}
+
+#calendarx-liste-categorie{
+border:solid 1px #B3CFD9;
+background-color:#eef;
+}
+
+
+
+/*** ETAT DU WORKFLOW ***/
+/*publié externe*/
+.state-external {
+color:#000000 !important; /*#436976*/
+}
+
+/*Attente modération*/
+.state-pending {
+color:#ff8300 !important;
+}
+
+/*publié interne*/
+.state-internally_published {
+color:#0000FF !important;
+}
+
+/*Brouillon interne*/
+.state-internal {
+color:#ff00aa !important;
+}
+
+
+.state-visible {
+color:#0F741E !important;
+}
+
+
+.state-published {
+color:#000 !important;
+}
+
+
+/*** Page Login ***/
+#login-form {
+margin:0 auto;
+width:30em;
+background-color:#fff;
+}
+
+
+
+
+/**
+.tileItem {
+height:122px;
+background-color:#ffffff;
+background-image:url(cesstex_news.png);
+background-repeat:no-repeat;
+border:none;
+margin-top:0.5em;
+padding-top:10px;
+padding-left:40px;
+width:690px;
+margin-left:auto;
+margin-right:auto;
+}
+
+.tileHeadline {
+font-size:1.5em;
+font-weight:bold;
+color:#fff;
+}
+
+
+.btn-news{
+float:left;
+width:32px;
+height:32px;
+background-image:url(btn_suivant.png);
+margin-top:10px;
+margin-right:10px;
+}
+
+.btn-news a{
+width:32px;
+height:32px;
+display:block;
+}
+
+.btn-news:hover {
+background-image:url(btn_suivant.png);
+}
+**/
+
+
+/*** galerie picsengine ***/
+#picsEngineGalerie{
+width:100%;
+height:625px;
+border:none;
+background-color:#000;
+}

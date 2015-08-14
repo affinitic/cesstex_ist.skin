@@ -1,0 +1,42 @@
+/*
+  home_page
+  masquer la barre de navigation sur la page d'accueil
+*/
+body{
+background: rgb(35,83,138);
+}
+
+.documentContent {
+background-color:transparent;
+font-size:110%;
+padding:1em 1em 2em !important;
+}
+
+#header-cesstex{
+display:none;
+}
+
+#portal-breadcrumbs{
+display:none;
+}
+
+#portal-personaltools{
+display:none;
+}
+
+#liens-texte{
+width:900px;
+margin:auto;
+text-align:center;
+margin-top:10px;
+border:1px solid #ccc;
+background-color:#fff;
+}
+
+#liens-texte a{
+color:#888;
+}
+
+#liens-texte a:hover{
+color:#555;
+}

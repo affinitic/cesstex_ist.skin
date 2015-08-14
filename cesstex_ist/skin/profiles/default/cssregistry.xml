@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<object name="portal_css">
+
+    <stylesheet title="CESSTEX Main Style"
+                id="cesstex.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                expression=""/>
+
+    <stylesheet title="IST Style"
+                id="ist.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                expression=""/>
+
+    <stylesheet title="ISM Style"
+                id="ism.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                expression=""/>
+
+    <stylesheet title="jquery"
+                id="jquery-ui.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                expression=""/>
+
+    <stylesheet title="HOME-PAGE-FLASH Style"
+                id="home_page.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                expression="object/isHomePage"/>
+
+    <stylesheet title="style pour les formulaires"
+                id="formulaire_style.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                expression=""/>
+
+    <stylesheet title="style pour tinyMCE"
+                id="editeur_interne_style.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                expression=""/>
+
+    <stylesheet title="style pour les portlets"
+                id="portlet.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                expression=""/>
+
+    <stylesheet title="Cesstex Font"
+                id="++theme++cesstex_ist.skin/font.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
+    <stylesheet title="ISM HomePage Styles"
+                id="++theme++cesstex_ist.skin/ism/css/style.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+
+    <stylesheet title="IST HomePage Styles"
+                id="++theme++cesstex_ist.skin/ist/css/style.css"
+                media="screen"
+                rel="stylesheet"
+                rendering="import"
+                cacheable="True"
+                compression="safe"
+                cookable="True"
+                enabled="1"
+                applyPrefix="True"
+                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
+</object>

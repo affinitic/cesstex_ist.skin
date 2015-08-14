@@ -1,0 +1,472 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="cesstex_ist.skin">
+
+    <!-- 'Cesstex skin' Zope 3 browser layer -->
+    <interface
+        interface=".interfaces.ICesstexTheme"
+        type="zope.publisher.interfaces.browser.IBrowserSkinType"
+        name="cesstex skin"
+        />
+
+    <!-- Customize the navigation portlet -->
+    <plone:portletRenderer
+        portlet="plone.app.portlets.portlets.navigation.INavigationPortlet"
+        layer=".interfaces.ICesstexTheme"
+        class=".navigation.MyNavRenderer"
+        />
+
+    <!-- Customize the events portlet -->
+    <plone:portletRenderer
+        portlet="plone.app.portlets.portlets.events.IEventsPortlet"
+        layer=".interfaces.ICesstexTheme"
+        class=".events.MyEventRenderer"
+        />
+
+     <!-- Customize the news portlet -->
+     <plone:portletRenderer
+        portlet="plone.app.portlets.portlets.news.INewsPortlet"
+        layer=".interfaces.ICesstexTheme"
+        class=".news.MyNewsRenderer"
+        />
+
+    <!-- formulaire contact-info -->
+    <!--
+    <browser:page
+            for="*"
+            name="contact-info"
+            template="templates/contact-info.cpt"
+            permission="zope.Public"
+            />
+    -->
+
+<!-- LEFFE SEARCH -->
+    <browser:page
+         for="*"
+         name="eleve-searchJSON"
+         class=".search_dossier_disciplinaire.SearchEleveAutoCompleteJSON"
+         permission="zope.Public"
+         />
+
+
+
+<!-- page d'accueil avec listing des news -->
+    <browser:view
+        name="homepageView"
+        for="*"
+        permission="zope.Public"
+        />
+
+    <browser:page
+        for="*"
+        name="ces-stex"
+        template="templates/home_page.pt"
+        permission="zope.Public"
+        />
+
+    <browser:page
+        class=".pageCheck.PageCheckView"
+        for="*"
+        name="isHomePage"
+        attribute="isHomePage"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        for="*"
+        name="logoView"
+        class=".LogoView.LogoView"
+        permission="zope.Public"
+        allowed_interface=".interfaces.ILogoView"
+        />
+
+    <!-- Home page header with flash animation viewlet -->
+    <browser:viewlet
+        name="cesstex.header"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class=".viewlets.CesstexSectionsViewlet"
+        layer=".interfaces.ICesstexTheme"
+        permission="zope.Public"
+        />
+
+    <!-- move portlet plone.path_bar-->
+    <browser:viewlet
+        name="plone.path_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class="plone.app.layout.viewlets.common.PathBarViewlet"
+        layer=".interfaces.ICesstexTheme"
+        permission="zope2.View"
+        />
+
+    <!-- move portlet plone.personnal_bar-->
+    <browser:viewlet
+        name="plone.personnal_bar"
+        manager="plone.app.layout.viewlets.interfaces.IPortalHeader"
+        class="plone.app.layout.viewlets.common.PersonalBarViewlet"
+        layer=".interfaces.ICesstexTheme"
+        permission="zope2.View"
+        />
+
+
+<!-- IST -->
+    <browser:page
+         for="*"
+         name="manageIST"
+         class=".manage_IST.ManageIST"
+         allowed_interface=".interfaces.IManageIST"
+         permission="zope.Public"
+         />
+
+    <browser:page
+        name="ist-accueil"
+        for="*"
+        template="templates/ist/ist_folder_view.pt"
+        class=".ist_home_page.IstHomePageView"
+        allowed_interface=".interfaces.IIstHomePageView"
+        permission="zope.Public" />
+
+    <browser:page
+        name="ist-formulaire-de-demande"
+        for="*"
+        template="templates/ist/ist_contact_form.pt"
+        permission="zope.Public"
+        class=".manage_IST.ManageIST"
+        allowed_interface=".interfaces.IManageIST" />
+
+    <browser:page
+        name="ist-contact-merci"
+        for="*"
+        template="templates/ist/ist_contact_merci.pt"
+        permission="zope.Public"
+        class=".manage_IST.ManageIST"
+        allowed_interface=".interfaces.IManageIST" />
+
+    <browser:page
+        name="ist-listing-event"
+        for="*"
+        template="templates/ist/ist_listing_event.pt"
+        class=".manage_IST.ManageIST"
+        allowed_interface=".interfaces.IManageIST"
+        permission="zope.Public" />
+
+    <browser:page
+        name="ist-la-nouvelle-salle-des-profs"
+        for="*"
+        template="templates/ist/ist_salle_des_profs.pt"
+        class=".ist_salle_des_profs.IstSalleDesProfsView"
+        allowed_interface=".interfaces.IIstSalleDesProfsView"
+        permission="zope.Public" />
+
+<!-- GESTION DES PROFS IST -->
+    <browser:page
+        name="chercher-un-professeur-ist"
+        for="*"
+        template="templates/ist/gestion_profs/admin_chercher_professeur_ist.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="ajouter-un-professeur-ist"
+        for="*"
+        template="templates/ist/gestion_profs/admin_ajouter_professeur_ist.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="modifier-un-professeur-ist"
+        for="*"
+        template="templates/ist/gestion_profs/admin_modifier_professeur_ist.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="supprimer-un-professeur-ist"
+        for="*"
+        template="templates/ist/gestion_profs/admin_supprimer_professeur_ist.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+
+<!-- ISM -->
+<!-- js -->
+    <browser:resource
+        name="ism.js"
+        file="js/ism.js"
+        />
+    <browser:resource
+        name="jquery-1.4.2.min.js"
+        file="js/jquery-1.4.2.min.js"
+        />
+
+    <browser:view
+        name="ismInfoSemaineView"
+        class=".ism_info_semaine.IsmInfoSemaine"
+        allowed_interface=".interfaces.IIsmInfoSemaine"
+        for="*"
+        permission="zope.Public"
+        />
+
+    <browser:view
+        name="ismEventAgendaView"
+        class=".ism_info_semaine.IsmEventAgenda"
+        allowed_interface=".interfaces.IIsmEventAgenda"
+        for="*"
+        permission="zope.Public"
+        />
+
+    <browser:page
+        for="*"
+        name="manageISM"
+        class=".manage_ISM.ManageISM"
+        allowed_interface=".interfaces.IManageISM"
+        permission="zope.Public"
+        />
+
+    <browser:page
+        class=".gallery_view.GalleryView"
+        for="*"
+        name="countElements"
+        attribute="countElements"
+        permission="zope2.View"
+        />
+
+    <browser:page
+        name="ism-listing-event"
+        for="*"
+        template="templates/ism/ism_listing_event.pt"
+        class=".manage_ISM.ManageISM"
+        allowed_interface=".interfaces.IManageISM"
+        permission="zope.Public" />
+
+
+<!-- ISM FOLDER VIEW SOUS-SITE -->
+    <browser:page
+        name="infos-generales"
+        for="*"
+        template="templates/ism/ism_folder_view.pt"
+        class=".manage_ISM.ManageISM"
+        allowed_interface=".interfaces.IManageISM"
+        permission="zope.Public" />
+
+<!-- ISM SALLE DES PROFS FOLDER VIEW -->
+    <browser:page
+        name="salle-des-profs"
+        for="*"
+        template="templates/ism/ism_salle_des_profs.pt"
+        class=".manage_ISM.ManageISM"
+        allowed_interface=".interfaces.IManageISM"
+        permission="cesstex.ProfISM" />
+
+
+<!-- DOSSIER DISCIPLINAIRE -->
+    <browser:page
+        name="gestionDossierDisciplinaire"
+        for="*"
+        permission="zope.Public"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire"
+        />
+
+    <browser:page
+        name="ajouter-un-dossier-disciplinaire"
+        for="*"
+        template="templates/ism/dossier_disciplinaire/dossier_disciplinaire_ajouter.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="modifier-un-dossier-disciplinaire"
+        for="*"
+        template="templates/ism/dossier_disciplinaire/dossier_disciplinaire_modifier.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="supprimer-un-dossier-disciplinaire"
+        for="*"
+        template="templates/ism/dossier_disciplinaire/dossier_disciplinaire_supprimer.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="deleteDossierDisciplinaire"
+        for="*"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        permission="cesstex.ProfISM"
+        attribute="deleteDossierDisciplinaire"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="resultat-recherche-dossier-disciplinaire"
+        for="*"
+        template="templates/ism/dossier_disciplinaire/dossier_disciplinaire_resultat_recherche.pt"
+        permission="zope.Public"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire"
+        />
+
+
+<!-- ELEVE -->
+    <browser:page
+        name="insertEleve"
+        for="*"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        permission="cesstex.ProfISM"
+        attribute="insertEleve"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="updateEleve"
+        for="*"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        permission="cesstex.ProfISM"
+        attribute="updateEleve"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="deleteEleve"
+        for="*"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        permission="cesstex.ProfISM"
+        attribute="deleteEleve"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+
+
+<!-- EVENEMENT ACTE -->
+    <browser:page
+        name="ajouter-un-evenement-au-dossier"
+        for="*"
+        template="templates/ism/dossier_disciplinaire/evenement_acte_ajouter.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="modifier-un-evenement-du-dossier"
+        for="*"
+        template="templates/ism/dossier_disciplinaire/evenement_acte_modifier.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="supprimer-un-evenement-du-dossier"
+        for="*"
+        template="templates/ism/dossier_disciplinaire/evenement_acte_supprimer.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+
+    <browser:page
+        name="insertEvenementActe"
+        for="*"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        permission="cesstex.ProfISM"
+        attribute="insertEvenementActe"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="updateEvenementActe"
+        for="*"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        permission="cesstex.ProfISM"
+        attribute="updateEvenementActe"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="deleteEvenementActe"
+        for="*"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        permission="cesstex.ProfISM"
+        attribute="deleteEvenementActe"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+<!-- EVENEMENT ACTE FICHIER ATTACHE -->
+    <browser:page
+        name="addEvenementActeDocument"
+        for="*"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        permission="cesstex.ProfISM"
+        attribute="addEvenementActeDocument"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+    <browser:page
+        name="deleteEvenementActeDocumentByDocumentPk"
+        for="*"
+        class=".manage_dossier_disciplinaire.ManageDossierDisciplinaire"
+        permission="cesstex.ProfISM"
+        attribute="deleteEvenementActeDocumentByDocumentPk"
+        allowed_interface=".interfaces.IManageDossierDisciplinaire" />
+
+
+
+<!-- GESTION DES PROFS ISM -->
+    <browser:page
+        name="chercher-un-professeur-ism"
+        for="*"
+        template="templates/ism/gestion_profs/admin_chercher_professeur_ism.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="ajouter-un-professeur-ism"
+        for="*"
+        template="templates/ism/gestion_profs/admin_ajouter_professeur_ism.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="modifier-un-professeur-ism"
+        for="*"
+        template="templates/ism/gestion_profs/admin_modifier_professeur_ism.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="supprimer-un-professeur-ism"
+        for="*"
+        template="templates/ism/gestion_profs/admin_supprimer_professeur_ism.pt"
+        permission="cesstex.ProfISM"
+        class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="insertProfesseur"
+        for="*"
+        class=".manage_professeur.ManageProfesseur"
+        permission="cesstex.ProfISM"
+        attribute="insertProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="updateProfesseur"
+        for="*"
+        class=".manage_professeur.ManageProfesseur"
+        permission="cesstex.ProfISM"
+        attribute="updateProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="deleteProfesseur"
+        for="*"
+        class=".manage_professeur.ManageProfesseur"
+        permission="cesstex.ProfISM"
+        attribute="deleteProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+</configure>
+
