@@ -20,7 +20,7 @@ setup(name='cesstex_ist.skin',
       url='http://svn.affinitic.be/plone/cesstex/cesstex_ist.skin/trunk',
       license='GPL',
       packages=find_packages(exclude=['ez_setup']),
-      namespace_packages=['cesstex'],
+      namespace_packages=['cesstex_ist'],
       include_package_data=True,
       zip_safe=False,
       install_requires=[
