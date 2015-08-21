@@ -18,6 +18,13 @@ text-decoration:underline;
 color:#0085cd;
 }
 
+#portal-column-content div h1{
+border-bottom:none;
+font-size:2em;
+color:#259ee0;
+margin:1em 0px;
+}
+
 .grasrouge{
 color:#a31b1b;
 font-weight:bold;
@@ -75,11 +82,11 @@ margin-bottom:10px;
 }
 
 #portal-column-one {
-background-image:url(background.png);
 border-collapse:collapse;
 padding:0;
 vertical-align:top;
 width:200px;
+background:#aeddf1 url(background_left_column.jpg) repeat-y left top;
 }
 
 #portal-column-one .visualPadding {
@@ -87,7 +94,6 @@ padding:2em 0 1em 5px;
 }
 
 #portal-column-two {
-background-image:url(background.png);
 border-collapse:collapse;
 padding:0px 0px 0px 4px;
 vertical-align:top;
@@ -116,7 +122,6 @@ border-top:1px solid #5fd2c7 !important;
 border-left:1px solid #5fd2c7 !important;
 border-right:1px solid #5fd2c7 !important;
 border-bottom:1px solid #fff !important;
-border-radius:8px 8px 0px 0px;
 height:20px;
 background:#eaf8fc;
 }
@@ -147,7 +152,6 @@ border-top:1px solid rgba(200,200,200,0.1) !important;
 border-left:1px solid #5fd2c7 !important;
 border-right:1px solid #5fd2c7 !important;
 border-bottom:1px solid #5fd2c7 !important;
-border-radius:0px 0px 8px 8px;
 height:17px;
 background-color:#f9fbff;
 margin-top:-4px;
