@@ -23,17 +23,6 @@
                 enabled="1"
                 expression=""/>
 
-    <stylesheet title="ISM Style"
-                id="ism.css"
-                media="screen"
-                rel="stylesheet"
-                rendering="import"
-                cacheable="True"
-                compression="safe"
-                cookable="True"
-                enabled="1"
-                expression=""/>
-
     <stylesheet title="jquery"
                 id="jquery-ui.css"
                 media="screen"
@@ -91,18 +80,6 @@
 
     <stylesheet title="Cesstex Font"
                 id="++theme++cesstex_ist.skin/font.css"
-                media="screen"
-                rel="stylesheet"
-                rendering="import"
-                cacheable="True"
-                compression="safe"
-                cookable="True"
-                enabled="1"
-                applyPrefix="True"
-                expression="request/HTTP_X_THEME_ENABLED | nothing"/>
-
-    <stylesheet title="ISM HomePage Styles"
-                id="++theme++cesstex_ist.skin/ism/css/style.css"
                 media="screen"
                 rel="stylesheet"
                 rendering="import"

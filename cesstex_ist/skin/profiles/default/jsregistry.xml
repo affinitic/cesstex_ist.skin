@@ -6,13 +6,6 @@
                 cookable="True"
                 enabled="True"
                 expression=""
-                id="++resource++ism.js"
-                inline="False"/>
-    <javascript cacheable="True"
-                compression="safe"
-                cookable="True"
-                enabled="True"
-                expression=""
                 id="++resource++jquery-1.4.2.min.js"
                 inline="False"/>
     <javascript cacheable="True"
