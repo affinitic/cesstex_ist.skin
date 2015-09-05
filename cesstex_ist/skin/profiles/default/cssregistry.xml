@@ -91,7 +91,7 @@
                 expression="request/HTTP_X_THEME_ENABLED | nothing"/>
 
     <stylesheet title="IST HomePage Styles"
-                id="++theme++cesstex_ist.skin/ist/css/style.css"
+                id="++theme++cesstex_ist.skin/style.css"
                 media="screen"
                 rel="stylesheet"
                 rendering="import"
