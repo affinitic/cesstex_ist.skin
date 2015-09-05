@@ -2,7 +2,7 @@
 CSS pour CESSTEX
 AFFINITIC avril 2014
 
-style pour le sous-site ISM
+IST STYLE
 
 **/
 
@@ -48,19 +48,6 @@ font-style: normal;
          url('font/desyrel-webfont.woff') format('woff'),
          url('font/desyrel-webfont.ttf') format('truetype'),
          url('font/desyrel-webfont.svg#desyrelregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'crayonematernel';
-    src: url('font/crayone-webfont.eot');
-    src: url('font/crayone-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/crayone-webfont.woff2') format('woff2'),
-         url('font/crayone-webfont.woff') format('woff'),
-         url('font/crayone-webfont.ttf') format('truetype'),
-         url('font/crayone-webfont.svg#crayoneregular') format('svg');
     font-weight: normal;
     font-style: normal;
 
