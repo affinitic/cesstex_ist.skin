@@ -1,0 +1,29 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      lang="en"
+      metal:use-macro="here/main_template/macros/master"
+      i18n:domain="plone">
+
+<head>
+    <metal:noborder fill-slot="top_slot"
+                    tal:define="dummy python:request.set('disable_border',1)" />
+</head>
+
+<body>
+<div metal:fill-slot="main"
+     tal:define="member context/@@plone_portal_state/member;
+                 manager python: member.has_role('Manager')">
+
+    <h1>► INFOS élèves & parents</h1>
+    <section id="ist-info-eleve-parent-top-section">
+        <div>
+            <p tal:replace="structure view/getIstInfoEleveParentTopSection" />
+        </div>
+        <footer tal:condition="manager">
+            <a href=""
+               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/infos-aux-eleves-et-aux-parents/ist_infos_eleves_parents/edit">[modifier ce texte]</a>
+        </footer>
+    </section>
+</div><!-- div metal-->
+</body>
+</html>
+

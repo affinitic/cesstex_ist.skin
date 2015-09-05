@@ -29,10 +29,11 @@ def setupcesstex(context):
 
     existingIds = portal.objectIds()
 
-    # Create 3 Documents for top boxes
+    # creation de 3 plone documents pour les top boxes de la salle_des_profs folderView
     # setTitle needed because of https://github.com/plone/plone.api/issues/99
     if not 'ist-manage-news' in existingIds:
-        page = api.content.create(container=portal, type='Document',
+        page = api.content.create(container=portal,
+                                  type='Document',
                                   id='ist-manage-news',
                                   title="Manage News")
         page.setTitle("Manage News")
@@ -40,7 +41,8 @@ def setupcesstex(context):
         api.content.transition(obj=portal['ist-manage-news'],
                                transition='internal-publish')
     if not 'ist-la-louviere-news' in existingIds:
-        page = api.content.create(container=portal, type='Document',
+        page = api.content.create(container=portal,
+                                  type='Document',
                                   id='ist-la-louviere-news',
                                   title="La Louviere News")
         page.setTitle("La Louvière News")
@@ -48,7 +50,8 @@ def setupcesstex(context):
         api.content.transition(obj=portal['ist-la-louviere-news'],
                                transition='internal-publish')
     if not 'ist-cefa-manage-news' in existingIds:
-        page = api.content.create(container=portal, type='Document',
+        page = api.content.create(container=portal,
+                                  type='Document',
                                   id='ist-cefa-manage-news',
                                   title="CEFA Manage News")
         page.setTitle("CEFA Manage News")
@@ -57,6 +60,39 @@ def setupcesstex(context):
                                transition='internal-publish')
 
     portal.setLayout('istSalleDesProfs')
+    # creation de 3 plone documents pour les top boxes de la ist_home_page folderView
+
+    # if not 'ist_home_page_top_section' in existingIds:
+    #     page = api.content.create(container=portal,
+    #                               type='Document',
+    #                               id='ist_home_page_top_section',
+    #                               title="ist_home_page_top_section")
+    #     page.setTitle("ist_home_page_top_section")
+    #     page.setExcludeFromNav(True)
+    #     api.content.transition(obj=portal['ist_home_page_top_section'],
+    #                            transition='internal-publish')
+
+    # if not 'ist_home_page_middle_section' in existingIds:
+    #     page = api.content.create(container=portal,
+    #                               type='Document',
+    #                               id='ist_home_page_middle_section',
+    #                               title="ist_home_page_middle_section")
+    #     page.setTitle("ist_home_page_middle_section")
+    #     page.setExcludeFromNav(True)
+    #     api.content.transition(obj=portal['ist_home_page_bottom_section'],
+    #                            transition='internal-publish')
+
+    # if not 'ist_home_page_bottom_section' in existingIds:
+    #     page = api.content.create(container=portal,
+    #                               type='Document',
+    #                               id='ist_home_page_bottom_section',
+    #                               title="ist_home_page_bottom_section")
+    #     page.setTitle("ist_home_page_bottom_section")
+    #     page.setExcludeFromNav(True)
+    #     api.content.transition(obj=portal['ist_home_page_bottom_section'],
+    #                            transition='internal-publish')
+
+
 
 
 def setupNewFolder(portal, folder, idFolder, titleFolder, descriptionFolder, indexFolder):

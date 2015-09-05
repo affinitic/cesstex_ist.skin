@@ -35,7 +35,6 @@ class IIsmInfoSemaine(Interface):
         """
 
 
-
 class IIsmEventAgenda(Interface):
     """
     Gestion des events agenda sur la folder view ism
@@ -98,7 +97,6 @@ class IManageISM(Interface):
         """
 
 
-
 class IManageIST(Interface):
     """
     Gestion de Institut Sainte Therese
@@ -143,6 +141,16 @@ class IIstHomePageView(Interface):
     def getIstHomePageBottomSection(self):
         """
         recupere le bloc inf de la page
+        """
+
+
+class IIstInoEleveParentPageView(Interface):
+    """
+    gestion de la folderview du dossier IST infos eleves & parents
+    """
+    def getIstInfoEleveParentTopSection():
+        """
+        recupere le bloc sup de la page
         """
 
 

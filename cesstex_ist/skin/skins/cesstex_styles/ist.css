@@ -184,27 +184,27 @@ margin:10px 0px;
 }
 
 article#ist-twee{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_01_twee.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_01_twee.jpg);
 }
 
 article#ist-agenda{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_02_agenda.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_02_agenda.jpg);
 }
 
 article#ist-horaire-cours{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_03_horaire_cours.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_03_horaire_cours.jpg);
 }
 
 article#ist-periode-examen{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_04_periode_examen.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_04_periode_examen.jpg);
 }
 
 article#ist-courrier-parent-eleve{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_05_courrier_parent_eleve.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_05_courrier_parent_eleve.jpg);
 }
 
 article#ist-docutheque{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_06_docutheque.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_06_docutheque.jpg);
 }
 
 
@@ -213,7 +213,7 @@ section#ist-sdp-bloc-centre{
 width:750px;
 height:237px;
 margin:10px 0px;
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_08_actu_du_moment.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_08_actu_du_moment.jpg);
 background-repeat:no-repeat;
 background-position:left top;
 }
@@ -262,7 +262,7 @@ article#ist-reference-pedagogique{
 float:left;
 width:117px;
 margin-left:38px;
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_09_reference_pedagogique.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_09_reference_pedagogique.jpg);
 background-repeat:no-repeat;
 background-position:left top;
 }
@@ -289,27 +289,27 @@ margin:10px 0px;
 }
 
 article#ist-mode_emploi{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_12_mode_emploi.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_12_mode_emploi.jpg);
 }
 
 article#ist-instance{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_13_instance.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_13_instance.jpg);
 }
 
 article#ist-groupe-relais-equipe{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_14_groupe_relais.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_14_groupe_relais.jpg);
 }
 
 article#ist-bulletin{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_15_bulletin.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_15_bulletin.jpg);
 }
 
 article#ist-galerie{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_16_galerie.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_16_galerie.jpg);
 }
 
 article#ist-amicale{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_17_amicale.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_17_amicale.jpg);
 }
 
 
@@ -340,15 +340,15 @@ color:#555;
 }
 
 article#ist-spd-manage-news{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_19_ist_manage_news.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_19_ist_manage_news.jpg);
 }
 
 article#ist-sdp-la-louviere-news{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_20_ist_lalouviere_news.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_20_ist_lalouviere_news.jpg);
 }
 
 article#ist-sdp-cefa-manage-news{
-background-image:url(++theme++cesstex_ist.skin/ist/images/ist_sdp_21_cefa_manage_news.jpg);
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_21_cefa_manage_news.jpg);
 }
 
 article.ist-bloc-info-implantation footer{
@@ -367,3 +367,19 @@ color:#f29400;
 }
 
 
+
+/**** INFOS ELEVES PARENTS ****/
+section#ist-info-eleve-parent-top-section footer{
+margin:3px 0px 0px 10px;
+width:95%;
+border-top:1px dotted #999;
+}
+
+section#ist-info-eleve-parent-top-section footer a{
+font-size:0.8em;
+color:#999;
+}
+
+section#ist-info-eleve-parent-top-section footer a:hover{
+color:#f29400;
+}

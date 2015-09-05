@@ -108,6 +108,22 @@
         permission="zope.Public" />
 
     <browser:page
+        name="ist-infos-aux-eleves-et-aux-parents"
+        for="*"
+        template="templates/ist/ist_info_eleve_parent.pt"
+        class=".ist_info_eleve_parent.IstInfoEleveParentPageView"
+        allowed_interface=".interfaces.IIstInoEleveParentPageView"
+        permission="zope.Public" />
+
+    <browser:page
+        name="ist-la-nouvelle-salle-des-profs"
+        for="*"
+        template="templates/ist/ist_salle_des_profs.pt"
+        class=".ist_salle_des_profs.IstSalleDesProfsView"
+        allowed_interface=".interfaces.IIstSalleDesProfsView"
+        permission="zope.Public" />
+
+    <browser:page
         name="ist-formulaire-de-demande"
         for="*"
         template="templates/ist/ist_contact_form.pt"
@@ -129,14 +145,6 @@
         template="templates/ist/ist_listing_event.pt"
         class=".manage_IST.ManageIST"
         allowed_interface=".interfaces.IManageIST"
-        permission="zope.Public" />
-
-    <browser:page
-        name="ist-la-nouvelle-salle-des-profs"
-        for="*"
-        template="templates/ist/ist_salle_des_profs.pt"
-        class=".ist_salle_des_profs.IstSalleDesProfsView"
-        allowed_interface=".interfaces.IIstSalleDesProfsView"
         permission="zope.Public" />
 
 <!-- GESTION DES PROFS IST -->
