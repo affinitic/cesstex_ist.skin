@@ -152,6 +152,15 @@ class IIstInoEleveParentPageView(Interface):
         """
         recupere le bloc sup de la page
         """
+    def getInfoEleveParentActualiteDuMoment():
+        """
+        recupere le bloc actualite du moment de la page
+        """
+
+    def getInfoEleveParentActualiteBrevePostIt():
+        """
+        recupere le bloc actualite breve pos-it de la page
+        """
 
 
 class IIstSalleDesProfsView(Interface):

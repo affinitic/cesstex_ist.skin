@@ -23,4 +23,16 @@ class IstInfoEleveParentPageView(BrowserView):
         """
         recupère le bloc sup de la page
         """
-        return self.getPageText('ist_infos_eleves_parents')
+        return self.getPageText('edit_ist_infos_eleves_parents_icones_liens_sup')
+
+    def getInfoEleveParentActualiteDuMoment(self):
+        """
+        recupère le bloc sup de la page
+        """
+        return self.getPageText('edit_ist_infos_eleves_parents_actualite_moment')
+
+    def getInfoEleveParentActualiteBrevePostIt(self):
+        """
+        recupère le bloc sup de la page
+        """
+        return self.getPageText('edit_ist_infos_eleves_parents_post_it')

@@ -14,14 +14,37 @@
                  manager python: member.has_role('Manager')">
 
     <h1>► INFOS élèves & parents</h1>
-    <section id="ist-info-eleve-parent-top-section">
+    <section id="ist-info-eleve-parent-icone-lien-section">
         <div>
             <p tal:replace="structure view/getIstInfoEleveParentTopSection" />
         </div>
         <footer tal:condition="manager">
             <a href=""
-               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/infos-aux-eleves-et-aux-parents/ist_infos_eleves_parents/edit">[modifier ce texte]</a>
+               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/infos-aux-eleves-et-aux-parents/edit_ist_infos_eleves_parents_bloc_sup/edit">[modifier ce texte]</a>
         </footer>
+    </section>
+
+    <section id="ist-info-eleve-parent-actualite-section">
+        <article id="ist-actu_du_moment" class="ist-bloc-info-center">
+            <div>
+                <p tal:replace="structure view/getInfoEleveParentActualiteDuMoment" />
+            </div>
+            <footer tal:condition="manager">
+                <a href=""
+                   tal:attributes="href string:${context/portal_url}/institut-sainte-therese/infos-aux-eleves-et-aux-parents/edit_ist_infos_eleves_parents_actualite_moment/edit">[modifier ce texte]</a>
+            </footer>
+        </article>
+
+        <article id="ist-actu-breve-post-it" class="ist-bloc-info-center">
+            <div>
+                <p tal:replace="structure view/getInfoEleveParentActualiteBrevePostIt" />
+            </div>
+            <footer tal:condition="manager">
+                <a href=""
+                   tal:attributes="href string:${context/portal_url}/institut-sainte-therese/infos-aux-eleves-et-aux-parents/edit_ist_infos_eleves_parents_post_it/edit">[modifier ce texte]</a>
+            </footer>
+        </article>
+        <div class="visualClear"></div>
     </section>
 </div><!-- div metal-->
 </body>

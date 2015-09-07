@@ -369,17 +369,27 @@ color:#f29400;
 
 
 /**** INFOS ELEVES PARENTS ****/
-section#ist-info-eleve-parent-top-section footer{
+section#ist-info-eleve-parent-icone-lien-section footer{
 margin:3px 0px 0px 10px;
 width:95%;
 border-top:1px dotted #999;
 }
 
-section#ist-info-eleve-parent-top-section footer a{
+section#ist-info-eleve-parent-icone-lien-section footer a{
 font-size:0.8em;
 color:#999;
 }
 
-section#ist-info-eleve-parent-top-section footer a:hover{
+section#ist-info-eleve-parent-icone-lien-section footer a:hover{
 color:#f29400;
 }
+
+section#ist-info-eleve-parent-actualite-section{
+width:750px;
+height:237px;
+margin:10px 0px;
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_08_actu_du_moment.jpg);
+background-repeat:no-repeat;
+background-position:left top;
+}
+
