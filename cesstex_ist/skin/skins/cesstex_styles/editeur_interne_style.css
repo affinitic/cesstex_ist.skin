@@ -114,6 +114,10 @@ background-color:transparent;
 background-color:#ecf7fd;
 }
 
+.padding-10{
+padding:10px;
+}
+
 .image-gauche{
 float:left;
 margin:3px 5px 5px 3px;
