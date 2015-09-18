@@ -15,7 +15,6 @@ margin:0px;
 padding:0px;
 font-family:"Lucida Grande", verdana, arial, sans-serif;
 color:#444;
-/*background-color:#00202b;*/
 background:rgb(35,83,138); /* Old browsers */
 background:-moz-linear-gradient(top,  rgba(35,83,138,1) 0%, rgba(167,207,223,1) 61%, rgba(167,207,223,1) 100%); /* FF3.6+ */
 background:-webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(35,83,138,1)), color-stop(61%,rgba(167,207,223,1)), color-stop(100%,rgba(167,207,223,1))); /* Chrome,Safari4+ */
