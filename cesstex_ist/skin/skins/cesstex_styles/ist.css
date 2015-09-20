@@ -163,6 +163,8 @@ color:#567184;
 
 
 /**** SALLE DES PROFS ****/
+
+/*classe dans les edit_plone_document*/
 article.ist-bloc-info{
 float:left;
 width:124px;
@@ -267,17 +269,23 @@ background-repeat:no-repeat;
 background-position:left top;
 }
 
+article#ist-sdp-bloc-sup-icone footer,
+article#ist-sdp-bloc-middle-icone footer,
 article.ist-bloc-info-center footer{
 margin:3px 0px 0px 10px;
 width:95%;
 border-top:1px dotted #999;
 }
 
+article#ist-sdp-bloc-sup-icone footer a,
+article#ist-sdp-bloc-middle-icone footer a,
 article.ist-bloc-info-center footer a{
 font-size:0.8em;
 color:#999;
 }
 
+article#ist-sdp-bloc-sup-icone footer a:hover,
+article#ist-sdp-bloc-middle-icone footer a:hover,
 article.ist-bloc-info-center footer a:hover{
 color:#f29400;
 }

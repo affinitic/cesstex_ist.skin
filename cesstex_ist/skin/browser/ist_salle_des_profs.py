@@ -55,20 +55,27 @@ class IstSalleDesProfsView(BrowserView):
             return
         return page.getText()
 
-    def getIstManageNews(self):
-        return self.getPageText('ist-manage-news')
-
-    def getIstLaLouviereNews(self):
-        return self.getPageText('ist-la-louviere-news')
-
-    def getIstCefaManageNews(self):
-        return self.getPageText('ist-cefa-manage-news')
+    def getIstTopSectionIcones(self):
+        return self.getPageText('edit_ist_top_section_icones')
 
     def getActualiteDuMoment(self):
-        return self.getPageText('actualite-du-moment')
+        return self.getPageText('edit_actualite_du_moment')
 
     def getActualiteBrevePostIt(self):
-        return self.getPageText('actualite-breve-post-it')
+        return self.getPageText('edit_actualite_breve_post_it')
+
+    def getIstMiddleSectionIcones(self):
+        return self.getPageText('edit_ist_middle_section_icones')
+
+    def getIstManageNews(self):
+        return self.getPageText('edit_ist_manage_news')
+
+    def getIstLaLouviereNews(self):
+        return self.getPageText('edit_ist_la_louviere_news')
+
+    def getIstCefaManageNews(self):
+        return self.getPageText('edit_ist_cefa_manage_news')
+
 
 
 

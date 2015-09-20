@@ -24,16 +24,16 @@ class IstHomePageView(BrowserView):
         """
         recupère le bloc sup de la page
         """
-        return self.getPageText('ist_home_page_top_section')
+        return self.getPageText('edit_ist_home_page_top_section')
 
     def getIstHomePageMiddleSection(self):
         """
         recupère le bloc central de la page
         """
-        return self.getPageText('ist_home_page_middle_section')
+        return self.getPageText('edit_ist_home_page_middle_section')
 
     def getIstHomePageBottomSection(self):
         """
         recupère le bloc inf de la page
         """
-        return self.getPageText('ist_home_page_bottom_section')
+        return self.getPageText('edit_ist_home_page_bottom_section')

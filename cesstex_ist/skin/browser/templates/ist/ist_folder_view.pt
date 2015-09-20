@@ -19,7 +19,7 @@
         </div>
         <footer tal:condition="manager">
             <a href=""
-               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/ist_home_page_top_section/edit">[modifier ce texte]</a>
+               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/edit_ist_home_page_top_section/edit">[modifier ce texte]</a>
         </footer>
     </section>
 
@@ -48,7 +48,7 @@
         </div>
         <footer tal:condition="manager">
             <a href=""
-               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/ist_home_page_middle_section/edit">[modifier ce texte]</a>
+               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/edit_ist_home_page_middle_section/edit">[modifier ce texte]</a>
         </footer>
     </section>
 
@@ -58,7 +58,7 @@
         </div>
         <footer tal:condition="manager">
             <a href=""
-               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/ist_home_page_bottom_section/edit">[modifier ce texte]</a>
+               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/edit_ist_home_page_bottom_section/edit">[modifier ce texte]</a>
         </footer>
     </section>
 
