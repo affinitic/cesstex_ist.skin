@@ -26,160 +26,18 @@ div#portletmanager-plone-leftcolumn.portlets-manager div.managedPortlet.portlet 
 height:40px;
 }
 
+/*** PORTLET IST ***/
+#portlet-ist{
+background-color:#DBF2FF;
+border:1px solid #999; /*#0075d2;*/
+padding:2px 0px 5px 0px;
+margin-bottom:1.2em;
+}
 
-
-/*** PORLET ISM ***/
-dl.portletNavigationTree dt.portletHeader,
-dl.portletCollection dt.portletHeader,
-dl.QuickUploadPortlet dt.portletHeader,
-.portletHeaderBrochureIsm,
-.portletHeaderEspaceInteractif{
-height:31px;
-color:#333;
-text-shadow:1px 1px 1px rgba(250,250,250,0.8);
-text-align:right;
-line-height:31px;
-padding-right:10px;
-font-variant:small-caps;
+.portlet-header-ist{
 font-weight:bold;
-}
-
-dl.portletNavigationTree dt.portletHeader{
-border-top:1px solid #20d4c8;
-border-left:1px solid #20d4c8;
-border-right:1px solid #20d4c8;
-background:#e6f8fc;
-}
-
-dl.portletCollection dt.portletHeader{
-border-top:1px solid #CC79B5 !important;
-border-left:1px solid #CC79B5 !important;
-border-right:1px solid #CC79B5 !important;
-background:#E4A7D3;
-}
-
-dl.portletCollection dd.portletItem{
-border-left:1px solid #CC79B5;
-border-right:1px solid #CC79B5;
-background:#FDF2FA;
-}
-
-dl.portletCollection dd.portletFooter{
-border-bottom:1px solid #CC79B5 !important;
-border-left:1px solid #CC79B5 !important;
-border-right:1px solid #CC79B5 !important;
-background:#FDF2FA;
-}
-
-/*** portlet gestionnaire de galerie quickuload ***/
-dl.QuickUploadPortlet dt.portletHeader{
-border-top:1px solid #955345 !important;
-border-left:1px solid #955345 !important;
-border-right:1px solid #955345 !important;
-background:#eea391;
-}
-
-dl.QuickUploadPortlet dd.portletItem{
-border-left:1px solid #955345;
-border-right:1px solid #955345;
-border-bottom:1px solid #955345;
-border-radius:0px 0px 8px 8px;
-background:#ffebd8;
-}
-
-
-/*** portlet brochure ism ***/
-.portletHeaderBrochureIsm{
-border-top:1px solid #498282;
-border-left:1px solid #498282;
-border-right:1px solid #498282;
-background:#A9BDBD;
-}
-
-.portletContentBrochureIsm{
-border-left:1px solid #498282;
-border-right:1px solid #498282;
-border-bottom:1px solid #498282;
-border-radius:0px 0px 15px 15px;
+font-size:1.1em;
 text-align:center;
-background-color:#D7DFDF;
-}
-
-.portletContentBrochureIsm a{
-color:#0082b6;
-}
-
-.portletContentBrochureIsm a:hover{
-color:#bb6600;
-}
-
-#wrapper-ism #main-content #left-column #portlet-ism-brochure{
-}
-
-#wrapper-ism #main-content #left-column #portlet-ism-brochure a{
-text-decoration:none;
-border-bottom:0px;
-}
-
-#wrapper-ism #main-content #left-column #portlet-ism-brochure #ism-couverture-brochure{
-margin:0px 0px 8px 0px;
-padding-top:6px;
-}
-
-#wrapper-ism #main-content #left-column #portlet-ism-brochure #ism-couverture-brochure img{
-box-shadow:3px 3px 6px rgba(50,50,50,0.5);
-}
-
-
-.portletHeaderEspaceInteractif{
-border-top:1px solid #d5cc86;
-border-left:1px solid #d5cc86;
-border-right:1px solid #d5cc86;
-background:#ffffb8;
-}
-
-.portletHeaderEspaceInteractif a{
-text-decoration:none;
-color:#000;
-}
-
-.portletHeaderEspaceInteractif a:hover{
-text-decoration:underline;
-}
-
-#espace-interactif-ism,
-div#portletItemGestionMembre{
-font-family:"mondaregular";
-font-size:12px;
-font-weight:normal;
-}
-
-#espace-interactif-ism{
-border-left:1px solid #d5cc86;
-border-right:1px solid #d5cc86;
-padding:8px 6px 12px 6px;
-text-align:center;
-background-color:#fffdf1;
-}
-
-#espace-interactif-ism a:hover{
-text-decoration:none;
-}
-
-.portletFooterEspaceInteractif{
-border-left:1px solid #d5cc86;
-border-right:1px solid #d5cc86;
-border-bottom:1px solid #d5cc86;
-border-radius:0px 0px 8px 8px;
-margin:0;
-padding:0.25em 1em;
-text-align:right;
-background:#fffdf1;
-}
-
-.texte-interactif{
-font-size:1.2em;
-color:#444;
 }
 
 div#portletHeaderGestionMembre{
@@ -209,19 +67,143 @@ margin:0px;
 }
 
 
-
-
-/*** PORTLET IST ***/
-#portlet-ist{
-background-color:#DBF2FF;
-border:1px solid #999; /*#0075d2;*/
-padding:2px 0px 5px 0px;
-margin-bottom:1.2em;
+/*** PORTLET ***/
+.portlet {
+width:95%;
+margin:auto;
+background-color:transparent;
+border-bottom:none;
+margin-bottom:1em;
 }
 
-.portlet-header-ist{
+.portletHeader {
+border-top:1px solid #777 !important;
+border-left:1px solid #777 !important;
+border-right:1px solid #777 !important;
+border-bottom:0px solid #fff !important;
+height:20px;
+background:#eaf8fc;
+}
+
+.portletHeader, .managedPortlet .portletHeader {
+}
+
+.portletHeader a {
+color:#333;
 font-weight:bold;
-font-size:1.1em;
-text-align:center;
+font-variant:small-caps;
 }
 
+.portletHeader a:hover {
+color:#000;
+}
+
+dl.portlet.portletNavigationTree{
+width:100%;
+background-color: rgba(0, 255, 255, 0.08);
+}
+
+dl.portlet.portletNavigationTree .portletItem {
+background-color:#f9fbff;
+border-left:1px solid #f00;
+border-right:1px solid #f000;
+margin:0;
+padding:5px 0px;
+}
+
+.navTreeItem a, dd.portletItem .navTreeItem a {
+border-left: 0px dotted rgba(255,255,255,0.1);
+border-right: 0px dotted rgba(255,255,255,0.1);
+border-top: 0px dotted rgba(255,255,255,0.1);
+border-bottom: 1px dotted #fff;
+}
+
+.portletFooterEvents {
+background-color:none;
+background-image:url(bg_footer_portlet.png);
+background-repeat:no-repeat;
+background-position: 0px -45px;
+border-left:none;
+border-right:none;
+border-bottom:none;
+margin:0;
+padding:0.25em 1em;
+text-align:right;
+border-left:none;
+border-right:none;
+border-top:1px dotted #8CACBB;
+}
+
+
+/*** PORTLET NAVIGARION ***/
+dl.portlet.portletNavigationTree dt.portletHeader{
+border-top:1px solid #fff !important;
+border-left:1px solid rgba(255,255,255,1) !important;
+border-right:1px solid rgba(255,255,255,0) !important;
+border-bottom:1px solid rgba(200,200,200,0.1) !important;
+height:20px;
+background: transparent;
+text-align:right;
+}
+
+dl.portlet.portletNavigationTree dd.portletItem.lastItem,
+dl.portlet.portletNavigationTree dd.portletFooter {
+background: transparent none repeat scroll 0 0;
+border: 1px solid #555;
+}
+
+dl.portlet.portletNavigationTree dd.portletItem.lastItem,
+dl.portlet.portletNavigationTree dd.portletFooter{
+background: transparent;
+border-left:1px solid rgba(255,255,255,1) !important;
+border-right:1px solid rgba(255,255,255,0) !important;
+border-top:1px solid rgba(255,255,255,0) !important;
+border-bottom:1px solid rgba(255,2555,255,0);
+}
+
+.navTreeItem a,
+dd.portletItem .navTreeItem a {
+/*border-bottom: 1px solid rgba(255,255,255,1);*/
+display:block;
+padding-bottom:0.3em;
+padding-top:0.3em;
+padding-left:3px;
+text-decoration:none;
+}
+
+.navTreeItem a:hover,
+dd.portletItem .navTreeItem a:hover,
+.navTreeCurrentItem {
+background-color: rgba(0, 255, 255, 0.5);
+color:#006b7c !important;
+}
+
+dl.portlet.portletNavigationTree dd.portletFooter{
+border-top:1px solid rgba(200,200,200,0) !important;
+border-left:1px solid rgba(255,255,255,1) !important;
+border-right:1px solid rgba(255,255,255,1) !important;
+border-bottom:1px solid rgba(255,255,255,1) !important;
+height:17px;
+background-color:transparent;
+margin-top:-4px;
+}
+
+
+
+/***PORLET COLLECTION AGENDA***/
+#agenda-footer{
+width:187px;
+margin-top:-6px;
+margin-left:-8px;
+}
+.calendrier-footer{
+text-align:left;
+}
+
+/*** CALENDAR ***/
+.ploneCalendar {
+border-bottom:1px solid #0075d2;
+border-collapse:collapse;
+border-spacing:0;
+width:100%;
+}

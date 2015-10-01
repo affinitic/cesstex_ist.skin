@@ -90,7 +90,7 @@ background:#aeddf1 url(background_left_column.jpg) repeat-y left top;
 }
 
 #portal-column-one .visualPadding {
-padding:2em 0 1em 5px;
+padding:2em 0 1em 0px;
 }
 
 #portal-column-two {
@@ -108,106 +108,7 @@ padding:2em 5px 1em 0;
 background-color:#fff;
 }
 
-/*** PORTLET ***/
-.portlet {
-width:95%;
-margin:auto;
-background-color:transparent;
-border-bottom:none;
-margin-bottom:1em;
-}
 
-.portletHeader {
-border-top:1px solid #5fd2c7 !important;
-border-left:1px solid #5fd2c7 !important;
-border-right:1px solid #5fd2c7 !important;
-border-bottom:1px solid #fff !important;
-height:20px;
-background:#eaf8fc;
-}
-
-.portletHeader, .managedPortlet .portletHeader {
-}
-
-.portletHeader a {
-color:#333;
-font-weight:bold;
-font-variant:small-caps;
-}
-
-.portletHeader a:hover {
-color:#000;
-}
-
-.portletItem {
-background-color:#f9fbff;
-border-left:1px solid #5fd2c7;
-border-right:1px solid #5fd2c7;
-margin:0;
-padding:5px 5px;
-}
-
-.portletFooter {
-border-top:1px solid rgba(200,200,200,0.1) !important;
-border-left:1px solid #5fd2c7 !important;
-border-right:1px solid #5fd2c7 !important;
-border-bottom:1px solid #5fd2c7 !important;
-height:17px;
-background-color:#f9fbff;
-margin-top:-4px;
-}
-
-.portletFooterEvents {
-background-color:none;
-background-image:url(bg_footer_portlet.png);
-background-repeat:no-repeat;
-background-position: 0px -45px;
-border-left:none;
-border-right:none;
-border-bottom:none;
-margin:0;
-padding:0.25em 1em;
-text-align:right;
-border-left:none;
-border-right:none;
-border-top:1px dotted #8CACBB;
-}
-
-.navTreeItem a, dd.portletItem .navTreeItem a {
-border-width:1px 1px 1px 1px;
-border-style:solid solid dotted solid;
-border-color:#fff #fff #ccc #fff;
-display:block;
-padding-bottom:0.3em;
-padding-top:0.3em;
-padding-left:3px;
-text-decoration:none;
-}
-
-.navTreeItem a:hover,
-dd.portletItem .navTreeItem a:hover,
-.navTreeCurrentItem {
-background-color:#DEE7EC;
-color:#436976;
-}
-
-/***PORLET COLLECTION AGENDA***/
-#agenda-footer{
-width:187px;
-margin-top:-6px;
-margin-left:-8px;
-}
-.calendrier-footer{
-text-align:left;
-}
-
-/*** CALENDAR ***/
-.ploneCalendar {
-border-bottom:1px solid #0075d2;
-border-collapse:collapse;
-border-spacing:0;
-width:100%;
-}
 
 
 
