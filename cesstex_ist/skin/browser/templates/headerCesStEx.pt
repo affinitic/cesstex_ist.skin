@@ -44,22 +44,18 @@
                cellpadding="0">
           <tr>
             <td class="ecole">
-                <a href=""
-                   tal:attributes="href string: ${context/portal_url}/ecole-fondamentale-sainte-marie">Ecole
+                <a href="http://www.ces-stexupery.be/ecole-fondamentale-sainte-marie">Ecole
                    fondamentale<br />Sainte-Marie</a>
             </td>
             <td class="ecole">
-                <a href=""
-                   tal:attributes="href string:
-                   ${context/portal_url}/ecole-fondamentale-saint-antoine">Ecole fondamentale<br />Saint-Antoine</a>
+                <a href="http://www.ces-stexupery.be/ecole-fondamentale-saint-antoine">Ecole fondamentale<br />Saint-Antoine</a>
             </td>
             <td class="ecole">
                 <a href="http://www.ismprimaire.be">Ecole
                    primaire<br />Sainte-Marie</a>
             </td>
             <td class="ecole">
-                <a href=""
-                   tal:attributes="href string: ${context/portal_url}/institut-sainte-marie">Institut<br />Sainte-Marie</a>
+                <a href="http://www.ces-stexupery.be/institut-sainte-marie">Institut<br />Sainte-Marie</a>
             </td>
             <td class="ecole">
                 <a href=""
@@ -75,20 +71,17 @@
           <tr>
             <td>
               <div id="type-maternelle">
-                <a href=""
-                   tal:attributes="href string: ${context/portal_url}/maternelle">Maternelle</a>
+                <a href="http://www.ces-stexupery.be/maternelle">Maternelle</a>
               </div>
             </td>
             <td>
               <div id="type-primaire">
-                <a href=""
-                   tal:attributes="href string: ${context/portal_url}/primaire">Primaire</a>
+                <a href="http://www.ces-stexupery.be/primaire">Primaire</a>
               </div>
             </td>
             <td>
               <div id="type-secondaire">
-                <a href=""
-                   tal:attributes="href string: ${context/portal_url}/secondaire">Secondaire</a>
+                <a href="http://www.ces-stexupery.be/secondaire">Secondaire</a>
               </div>
             </td>
           </tr>

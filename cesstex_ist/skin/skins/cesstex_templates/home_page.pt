@@ -3,53 +3,51 @@
       metal:use-macro="here/main_template/macros/master"
       i18n:domain="plone">
 
-  <head>
+<head>
     <tal:comment replace="nothing">
             Please note that this template will most likely be renamed to news_listing
             in the future, so if you reference this template or its macros from
             another template, make sure to change it when you upgrade.
     </tal:comment>
-  </head>
-  <body>
+</head>
+<body>
     <div metal:fill-slot="main" id="content-news">
+        <div align="center">
+            <object type="application/x-shockwave-flash"
+                  data="cesstex.swf"
+                  style="width:800px;height:600px;">
+                <param name="base"
+                       value="cesstex.swf" />
+                <param name="movie"
+                       value="cesstex.swf" />
+                <param name="quality"
+                       value="high" />
+                <param name="menu"
+                       value="true" />
+            </object>
+        </div>
+        <div id="liens-texte">
+            <a href="http://www.ces-stexupery.be/ecole-fondamentale-sainte-marie">
+             Ecole fondamentale Sainte-Marie</a> |
 
-    <div align="center">
-      <object type="application/x-shockwave-flash"
-              data="cesstex.swf"
-              style="width:800px;height:600px;">
-        <param name="base"
-               value="cesstex.swf" />
-        <param name="movie"
-               value="cesstex.swf" />
-        <param name="quality"
-               value="high" />
-        <param name="menu"
-               value="true" />
-      </object>
-    </div>
-    <div id="liens-texte">
-      <a href="http://www.ces-stexupery.be/ecole-fondamentale-sainte-marie">
-         Ecole fondamentale Sainte-Marie</a> |
+            <a href="http://www.ismprimaire.be">
+              Ecole primaire Sainte-Marie</a> |
 
-      <a href="http://www.ismprimaire.be">
-          Ecole primaire Sainte-Marie</a> |
+            <a href="http://www.ces-stexupery.be/ecole-fondamentale-saint-antoine">
+             Ecole fondamentale Sainte-Antoine</a> |
 
-      <a href="http://www.ces-stexupery.be/ecole-fondamentale-saint-antoine">
-         Ecole fondamentale Sainte-Antoine</a> |
+            <a href="http://www.ces-stexupery.be/institut-sainte-marie">
+             Institut Sainte-Marie</a> |
 
-      <a href="http://www.ces-stexupery.be/institut-sainte-marie">
-         Institut Sainte-Marie</a> |
-
-      <a href=""
-         tal:attributes="href string: ${context/portal_url}/institut-sainte-therese">
-         Institut Sainte-Therese</a>
-    </div>
-    <div class="discreet" align="center">
-        Centre scolaire Saint-Exup&eacute;ry<br />
-        La Louvi&egrave;re - Manage
-    </div>
-
+            <a href=""
+             tal:attributes="href string: ${context/portal_url}/institut-sainte-therese">
+             Institut Sainte-Therese</a>
+        </div>
+        <div class="discreet" align="center">
+            Centre scolaire Saint-Exup&eacute;ry<br />
+            La Louvi&egrave;re - Manage
+        </div>
    </div>
-  </body>
+</body>
 </html>
 
