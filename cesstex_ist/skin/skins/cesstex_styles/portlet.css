@@ -12,9 +12,9 @@ padding-left:8px;
 }
 
 div#portletmanager-plone-leftcolumn.portlets-manager div.managedPortlet.portlet div.portletHeader span.managedPortletActions {
-display: block;
+display:block;
 float:right;
-width: 200px;
+width:200px;
 }
 
 
@@ -50,7 +50,7 @@ padding-right:10px;
 font-variant:small-caps;
 font-weight:bold;
 border-radius:8px 8px 0px 0px;
-background: rgb(180,227,145);
+background:rgb(180,227,145);
 }
 
 div#portletItemGestionMembre{
@@ -77,9 +77,9 @@ margin-bottom:1em;
 }
 
 .portletHeader {
-border-top:1px solid #777 !important;
-border-left:1px solid #777 !important;
-border-right:1px solid #777 !important;
+border-top:1px solid #fff !important;
+border-left:1px solid #fff !important;
+border-right:1px solid #fff !important;
 border-bottom:0px solid #fff !important;
 height:20px;
 background:#eaf8fc;
@@ -100,7 +100,7 @@ color:#000;
 
 dl.portlet.portletNavigationTree{
 width:100%;
-background-color: rgba(0, 255, 255, 0.08);
+background-color:rgba(0, 255, 255, 0.08);
 }
 
 dl.portlet.portletNavigationTree .portletItem {
@@ -112,17 +112,17 @@ padding:5px 0px;
 }
 
 .navTreeItem a, dd.portletItem .navTreeItem a {
-border-left: 0px dotted rgba(255,255,255,0.1);
-border-right: 0px dotted rgba(255,255,255,0.1);
-border-top: 0px dotted rgba(255,255,255,0.1);
-border-bottom: 1px dotted #fff;
+border-left:0px dotted rgba(255,255,255,0.1);
+border-right:0px dotted rgba(255,255,255,0.1);
+border-top:0px dotted rgba(255,255,255,0.1);
+border-bottom:1px dotted #fff;
 }
 
 .portletFooterEvents {
 background-color:none;
 background-image:url(bg_footer_portlet.png);
 background-repeat:no-repeat;
-background-position: 0px -45px;
+background-position:0px -45px;
 border-left:none;
 border-right:none;
 border-bottom:none;
@@ -142,19 +142,19 @@ border-left:1px solid rgba(255,255,255,1) !important;
 border-right:1px solid rgba(255,255,255,0) !important;
 border-bottom:1px solid rgba(200,200,200,0.1) !important;
 height:20px;
-background: transparent;
+background:transparent;
 text-align:right;
 }
 
 dl.portlet.portletNavigationTree dd.portletItem.lastItem,
 dl.portlet.portletNavigationTree dd.portletFooter {
-background: transparent none repeat scroll 0 0;
-border: 1px solid #555;
+background:transparent none repeat scroll 0 0;
+border:1px solid #555;
 }
 
 dl.portlet.portletNavigationTree dd.portletItem.lastItem,
 dl.portlet.portletNavigationTree dd.portletFooter{
-background: transparent;
+background:transparent;
 border-left:1px solid rgba(255,255,255,1) !important;
 border-right:1px solid rgba(255,255,255,0) !important;
 border-top:1px solid rgba(255,255,255,0) !important;
@@ -163,7 +163,7 @@ border-bottom:1px solid rgba(255,2555,255,0);
 
 .navTreeItem a,
 dd.portletItem .navTreeItem a {
-/*border-bottom: 1px solid rgba(255,255,255,1);*/
+/*border-bottom:1px solid rgba(255,255,255,1);*/
 display:block;
 padding-bottom:0.3em;
 padding-top:0.3em;
@@ -174,7 +174,7 @@ text-decoration:none;
 .navTreeItem a:hover,
 dd.portletItem .navTreeItem a:hover,
 .navTreeCurrentItem {
-background-color: rgba(0, 255, 255, 0.5);
+background-color:rgba(0, 255, 255, 0.1);
 color:#006b7c !important;
 }
 
@@ -189,6 +189,25 @@ margin-top:-4px;
 }
 
 
+
+dl.portlet.portletSearch .portletHeader{
+text-align:right;
+}
+
+dl.portlet.portletSearch dd.portletItem{
+background-color:rgba(0, 255, 255, 0.05);
+border-left:1px solid #fff;
+border-right:1px solid #fff;
+margin:0;
+padding:1em;
+}
+
+dl.portlet.portletSearch dd.portletFooter{
+border-top:1px solid rgba(200,200,200,0) !important;
+border-left:1px solid rgba(255,255,255,1) !important;
+border-right:1px solid rgba(255,255,255,1) !important;
+border-bottom:1px solid rgba(255,255,255,1) !important;
+}
 
 /***PORLET COLLECTION AGENDA***/
 #agenda-footer{
