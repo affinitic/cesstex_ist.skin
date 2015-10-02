@@ -28,20 +28,16 @@
       </object>
     </div>
     <div id="liens-texte">
-      <a href=""
-         tal:attributes="href string: ${context/portal_url}/ecole-fondamentale-sainte-marie">
+      <a href="http://www.ces-stexupery.be/ecole-fondamentale-sainte-marie">
          Ecole fondamentale Sainte-Marie</a> |
 
       <a href="http://www.ismprimaire.be">
           Ecole primaire Sainte-Marie</a> |
 
-      <a href=""
-         tal:attributes="href string:
-                         ${context/portal_url}/ecole-fondamentale-saint-antoine">
+      <a href="http://www.ces-stexupery.be/ecole-fondamentale-saint-antoine">
          Ecole fondamentale Sainte-Antoine</a> |
 
-      <a href=""
-         tal:attributes="href string: ${context/portal_url}/institut-sainte-marie">
+      <a href="http://www.ces-stexupery.be/institut-sainte-marie">
          Institut Sainte-Marie</a> |
 
       <a href=""
@@ -52,7 +48,7 @@
         Centre scolaire Saint-Exup&eacute;ry<br />
         La Louvi&egrave;re - Manage
     </div>
-    
+
    </div>
   </body>
 </html>
