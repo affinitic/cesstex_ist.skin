@@ -140,7 +140,7 @@ dl.portlet.portletNavigationTree dt.portletHeader{
 border-top:1px solid #fff !important;
 border-left:1px solid rgba(255,255,255,1) !important;
 border-right:1px solid rgba(255,255,255,0) !important;
-border-bottom:1px solid rgba(200,200,200,0.1) !important;
+border-bottom:1px dotted rgba(200,200,200,0.5) !important;
 height:20px;
 background:transparent;
 text-align:right;
@@ -181,7 +181,7 @@ color:#006b7c !important;
 dl.portlet.portletNavigationTree dd.portletFooter{
 border-top:1px solid rgba(200,200,200,0) !important;
 border-left:1px solid rgba(255,255,255,1) !important;
-border-right:1px solid rgba(255,255,255,1) !important;
+border-right:1px solid rgba(0, 255, 255, 0.05) !important;
 border-bottom:1px solid rgba(255,255,255,1) !important;
 height:17px;
 background-color:transparent;
@@ -189,23 +189,33 @@ margin-top:-4px;
 }
 
 
+dl.portlet.portletSearch{
+width:100%;
+}
+
 
 dl.portlet.portletSearch .portletHeader{
+background-color:rgba(0, 255, 255, 0.05);
 text-align:right;
+border-top:1px solid rgba(255,255,255,1) !important;
+border-left:1px solid rgba(255,255,255,1) !important;
+border-right:1px solid rgba(0, 255, 255, 0.05) !important;
+border-bottom:1px dotted rgba(200,200,200,0.5) !important;
 }
 
 dl.portlet.portletSearch dd.portletItem{
 background-color:rgba(0, 255, 255, 0.05);
 border-left:1px solid #fff;
-border-right:1px solid #fff;
+border-right:1px solid rgba(0, 255, 255, 0.05);
 margin:0;
 padding:1em;
 }
 
 dl.portlet.portletSearch dd.portletFooter{
-border-top:1px solid rgba(200,200,200,0) !important;
+background-color:rgba(0, 255, 255, 0.05);
+border-top:1px dotted rgba(200,200,200,0.5) !important;
 border-left:1px solid rgba(255,255,255,1) !important;
-border-right:1px solid rgba(255,255,255,1) !important;
+border-right:1px solid rgba(0, 255, 255, 0.05) !important;
 border-bottom:1px solid rgba(255,255,255,1) !important;
 }
 
