@@ -418,3 +418,19 @@ background-repeat:no-repeat;
 background-position:left top;
 }
 
+
+
+.photoAlbumFolder {
+background-image: none;
+background-color:#fffdf1;
+border:1px solid #d5cc86;
+border-radius:3px 18px 3px 18px;
+margin:8px;
+box-shadow:2px 2px 4px rgba(50,50,50,0.5);
+}
+
+.photoAlbumEntry{
+height:195px;
+}
+
+
