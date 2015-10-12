@@ -20,7 +20,7 @@
         </div>
         <footer tal:condition="manager">
             <a href=""
-               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/infos-aux-eleves-et-aux-parents/edit_ist_infos_eleves_parents_bloc_sup/edit">[modifier ce texte]</a>
+               tal:attributes="href string:${context/portal_url}/institut-sainte-therese/infos-aux-eleves-et-aux-parents/edit_ist_infos_eleves_parents_icones_liens_sup/edit">[modifier ce texte]</a>
         </footer>
     </section>
 
