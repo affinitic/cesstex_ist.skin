@@ -91,6 +91,25 @@
 
 
 <!-- IST -->
+
+<!-- VIEW SUR LES CLASSES -->
+    <browser:page
+        for="*"
+        name="manageIST"
+        class=".manage_IST.ManageIST"
+        allowed_interface=".interfaces.IManageIST"
+        permission="zope.Public"
+        />
+
+    <browser:page
+        for="*"
+        name="manageProfesseur"
+        class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur"
+        permission="zope.Public" />
+        />
+
+<!-- compteur d'objet dans les dossiers -->
     <browser:page
         class=".gallery_view.GalleryView"
         for="*"
@@ -98,14 +117,6 @@
         attribute="countElements"
         permission="zope2.View"
         />
-
-    <browser:page
-         for="*"
-         name="manageIST"
-         class=".manage_IST.ManageIST"
-         allowed_interface=".interfaces.IManageIST"
-         permission="zope.Public"
-         />
 
     <browser:page
         name="ist-accueil"
@@ -186,6 +197,30 @@
         template="templates/ist/gestion_profs/admin_supprimer_professeur_ist.pt"
         permission="cesstex.ProfISM"
         class=".manage_professeur.ManageProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="insertProfesseur"
+        for="*"
+        class=".manage_professeur.ManageProfesseur"
+        permission="cesstex.ProfISM"
+        attribute="insertProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="updateProfesseur"
+        for="*"
+        class=".manage_professeur.ManageProfesseur"
+        permission="cesstex.ProfISM"
+        attribute="updateProfesseur"
+        allowed_interface=".interfaces.IManageProfesseur" />
+
+    <browser:page
+        name="deleteProfesseur"
+        for="*"
+        class=".manage_professeur.ManageProfesseur"
+        permission="cesstex.ProfISM"
+        attribute="deleteProfesseur"
         allowed_interface=".interfaces.IManageProfesseur" />
 
 </configure>

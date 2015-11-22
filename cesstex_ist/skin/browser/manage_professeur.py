@@ -5,7 +5,6 @@ from zope.interface import implements
 #from mailer import Mailer
 from Products.CMFCore.utils import getToolByName
 from z3c.sqlalchemy import getSAWrapper
-from cesstex.db.pgsql.baseTypes import Professeur, StatutMembre
 from interfaces import IManageISM
 
 LIMIT = 10
@@ -14,7 +13,6 @@ from cesstex.db.pgsql.baseTypes import Ecole, \
                                        Implantation, \
                                        Professeur, \
                                        StatutMembre
-
 
 
 class ManageProfesseur(BrowserView):
@@ -79,6 +77,7 @@ class ManageProfesseur(BrowserView):
     def getEcoleDuProfesseur(self, ecolePK):
         """
         recuperation de l'école d'un prof
+        table ecole ism=1 ist=2 po=3
         """
         wrapper = getSAWrapper('cesstex')
         session = wrapper.session
@@ -113,7 +112,7 @@ class ManageProfesseur(BrowserView):
 
     def insertProfesseur(self):
         """
-        insère un nouveau dossier disciplinaire
+        insère un nouveau professeur
         """
         fields = self.context.REQUEST
 
@@ -141,7 +140,7 @@ class ManageProfesseur(BrowserView):
         session.refresh(newEntry)
 
         userProf = ('%s %s') % (profPrenom, profNom)
-        userRole = 'ProfISM'
+        userRole = 'ProfIST'
         self.addLoginProfesseur(profLogin, profPass, userRole)
         self.addInfoProfesseur(profLogin, profEmail, userProf)
 
@@ -149,18 +148,15 @@ class ManageProfesseur(BrowserView):
         ploneUtils = getToolByName(self.context, 'plone_utils')
         message = u"Le nouveau membre a bien été ajouté !"
         ploneUtils.addPortalMessage(message, 'info')
-        if profEcoleFk == '1':
-            url = "%s/institut-sainte-marie/ajouter-un-professeur-ism" % (portalUrl)
-        if profEcoleFk == '2':
-            url = "%s/institut-sainte-therese/ajouter-un-professeur-ist" % (portalUrl)
+
+        url = "%s/institut-sainte-therese/ajouter-un-professeur-ist" % (portalUrl)
         self.request.response.redirect(url)
         return ''
 
     def updateProfesseur(self):
         """
-        Updates un événement acté lié à un dossier
+        Update les informations d'un professeur
         """
-
         fields = self.context.REQUEST
 
         profPk = getattr(fields, 'profPk')
@@ -171,7 +167,6 @@ class ManageProfesseur(BrowserView):
         profLogin = getattr(fields, 'profLogin', None)
         profPass = getattr(fields, 'profPass', None)
         profStatusFk = getattr(fields, 'profStatusFk', None)
-        profEcoleFk = getattr(fields, 'profEcoleFk', None)
 
         wrapper = getSAWrapper('cesstex')
         session = wrapper.session
@@ -188,7 +183,7 @@ class ManageProfesseur(BrowserView):
         session.flush()
 
         userProf = ('%s %s') % (profPrenom, profNom)
-        userRole = 'ProfISM'
+        userRole = 'ProfIST'
         self.addLoginProfesseur(profLogin, profPass, userRole)
         self.addInfoProfesseur(profLogin, profEmail, userProf)
 
@@ -196,22 +191,19 @@ class ManageProfesseur(BrowserView):
         ploneUtils = getToolByName(self.context, 'plone_utils')
         message = u"Le professeur a bien été modifié !"
         ploneUtils.addPortalMessage(message, 'info')
-        if profEcoleFk == '1':
-            url = "%s/institut-sainte-marie/ajouter-un-professeur-ism?profPk=%s" % (portalUrl, profPk)
-        if profEcoleFk == '2':
-            url = "%s/institut-sainte-therese/ajouter-un-professeur-ist" % (portalUrl)
+
+        url = "%s/institut-sainte-therese/ajouter-un-professeur-ist?profPk=%s" % (portalUrl, profPk)
         self.request.response.redirect(url)
         return ''
 
     def deleteProfesseur(self):
         """
-        Supprimer un événement acté lié à un dossier
+        Supprimer un professeur
         """
         fields = self.context.REQUEST
 
         profPk = getattr(fields, 'profPk', None)
         profLogin = getattr(fields, 'profLogin', None)
-        profEcoleFk = getattr(fields, 'profEcoleFk', None)
 
         wrapper = getSAWrapper('cesstex')
         session = wrapper.session
@@ -227,9 +219,7 @@ class ManageProfesseur(BrowserView):
         ploneUtils = getToolByName(self.context, 'plone_utils')
         message = u"Le professeur a bien été supprimé !"
         ploneUtils.addPortalMessage(message, 'info')
-        if profEcoleFk == '1':
-            url = "%s/institut-sainte-marie/ajouter-un-professeur-ism?profPk=%s" % (portalUrl, profPk)
-        if profEcoleFk == '2':
-            url = "%s/institut-sainte-therese/ajouter-un-professeur-ist" % (portalUrl)
+
+        url = "%s/institut-sainte-therese/ajouter-un-professeur-ist?profPk=%s" % (portalUrl, profPk)
         self.request.response.redirect(url)
         return ''
