@@ -1,0 +1,29 @@
+<html xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      i18n:domain="plone">
+
+<body>
+    <div metal:define-macro="portlet"
+         tal:condition="python:user.has_role(['Manager'], here)">
+        <div class="portlet">
+            <div id="portletHeaderTeamViewer">Lien TeamViewer</div>
+            <div id="portletItemTeamViewer">
+                <a href="http://www.teamviewer.com/link/?url=505374&id=1002705901"
+                   style="text-decoration:none;">
+                    <img src="http://www.teamviewer.com/link/?url=742306&id=1002705901"
+                         alt="TeamViewer pour Télé-assistance"
+                         title="TeamViewer pour Télé-assistance"
+                         border="0"
+                         width="120"
+                         height="60" />
+                    <span style="position:absolute; top:17px; left:45px; display:block; cursor:pointer; color:White; font-family:Arial; font-size:11px; line-height:1.2em; font-weight:bold; text-align:center; width:70px;">
+                        Télé-assistance
+                    </span>
+                    TeamViewer pour<br /> Télé-assistance
+                </a>
+            </div>
+         </div>
+    </div>
+</body>
+</html>
+
