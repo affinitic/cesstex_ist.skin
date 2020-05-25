@@ -218,6 +218,10 @@ article#ist-periode-examen{
 background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_04_periode_examen.jpg);
 }
 
+article#ist-its-learning{
+background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_07_its_learning.jpg);
+}
+
 article#ist-courrier-parent-eleve{
 background-image:url(++theme++cesstex_ist.skin/images/ist_sdp_05_courrier_parent_eleve.jpg);
 }
